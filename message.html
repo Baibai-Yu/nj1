@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寄语</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body.message-page {
+            background-image: url('images/1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="message-page">
+    <header>
+        <div class="header-image">
+            <img src="images/0.png" alt="南京——循历史脉络，悟红色初心">
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-item">首页</a>
+            <a href="attractions.html" class="nav-item">红色记忆</a>
+            <a href="map.html" class="nav-item">红色地图</a>
+            <a href="message.html" class="nav-item">寄语</a>
+        </nav>
+    </header>
+
+    <main class="message-board-fullpage">
+        <div id="messages-list" class="messages-display-area">
+            </div>
+
+        <div class="message-form-area">
+            <form id="message-form">
+                <div class="form-group">
+                    <input type="text" id="nickname" name="nickname" placeholder="昵称" required>
+                    <textarea id="message-content" name="message-content" placeholder="南京·寄语" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">发表留言</button>
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>“智绘金陵·薪火相传”实践团</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

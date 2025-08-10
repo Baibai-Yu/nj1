@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红色地图</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=77bc68f95279d54c3a5e0e0dcb7a57e0"></script>
+    <style>
+        #container {
+            width: 100%;
+            height: 600px; /* 根据需要调整地图高度 */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-image">
+            <img src="images/0.png" alt="南京——循历史脉络，悟红色初心">
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-item">首页</a>
+            <a href="attractions.html" class="nav-item">红色记忆</a>
+            <a href="map.html" class="nav-item active">红色地图</a>
+            <a href="message.html" class="nav-item">寄语</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>南京的红色足迹</h1>
+        <div id="container"></div>
+    </main>
+
+
+    <footer>
+        <p>“智绘金陵·薪火相传”实践团</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* 通用样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #fff;
+    padding: 0; /* 移除 header 的 padding */
+    margin: 0;
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 垂直排列 */
+}
+
+.header-image {
+    width: 100%; /* 宽度铺满 header */
+    /* height: auto;  可以尝试使用固定高度 */
+    flex-grow: 1; /* 让 header-image 占据剩余空间 */
+    overflow: hidden; /* 防止图片超出 */
+}
+
+.header-image img {
+    width: 100%;
+    height: auto; /* 保持图片比例 */
+    display: block; /* 移除图片底部可能出现的间隙 */
+    object-fit: cover; /* 填充容器，可能会裁剪 */
+    /* object-fit: contain; 如果不想裁剪，但可能会有留白 */
+}
+
+.navbar {
+    background-color: #c0392b; /* 红色 */
+    display: flex;             /* 启用弹性盒布局 */
+    justify-content: center;   /* 导航项在主轴上居中 */
+    padding: 0;
+    margin-top: 0;
+    width: 100%;               /* 确保导航栏宽度为100% */
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 0;          /* 移除左右内边距，以便 flex-grow 生效 */
+    transition: background-color 0.3s;
+    font-weight: bold;
+    flex-grow: 1;             /* 让每个导航项等比例占据剩余空间 */
+    text-align: center;       /* 让文字在导航项内居中 */
+}
+
+.nav-item:hover, .nav-item.active {
+    background-color: #a93226;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/*返回按钮*/
+
+#scrollToTopBtn {
+    display: none; /* 默认隐藏按钮 */
+    position: fixed; /* 固定在视口中 */
+    bottom: 25px; /* 距离底部的距离 */
+    right: 30px; /* 距离右侧的距离 */
+    z-index: 99; /* 确保按钮在其他元素之上 */
+    border: none;
+    outline: none;
+    background-color: #c0392b; /* 按钮背景色，与导航栏颜色一致 */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s; /* 添加过渡效果 */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #a93226; /* 悬停时的颜色 */
+}
