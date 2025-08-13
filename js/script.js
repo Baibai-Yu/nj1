@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // 预设的留言数据，仅在 localStorage 中没有数据时使用
 const initialMessages = [
     { nickname: '百百', content: '你好，南京！', date: '2025-08-10' },
+    { nickname: '未央', content: '一座南京城，半部近代史', date: '2025-08-13' },
+    { nickname: 'Myron', content: '愿以寸心寄华夏，且将岁月赠山河。', date: '2025-08-11' },
+    { nickname: '予le', content: '仰金陵英雄迹，承千秋赤子心', date: '2025-08-13' },
+    { nickname: 'Ring', content: '金陵红迹印初心，先辈风骨照前行，吾辈当承志致远。', date: '2025-08-13' },
+    { nickname: 'Chloe', content: '希望南京越来越好', date: '2025-08-10' },
 ];
 
     // 加载或初始化留言
@@ -233,4 +238,5 @@ const initialMessages = [
             });
         });
     }
+
 
